@@ -1,0 +1,13 @@
+# Typst document tasks
+
+build:
+    typst compile --root .. main.typ
+
+watch:
+    typst watch --root .. main.typ
+
+preview:
+    typst preview --root .. main.typ
+
+png:
+    typst compile --root .. main.typ --format png --ppi 110 "page-{p}.png"

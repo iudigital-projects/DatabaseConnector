@@ -1,0 +1,70 @@
+oracle-jdbc-api:
+  type: web
+  title: "Package java.sql"
+  author: Oracle
+  date: 2023
+  parent:
+    type: web
+    title: Java Platform, Standard Edition 21 API Specification
+  url: https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/java/sql/package-summary.html
+
+oracle-swing-api:
+  type: web
+  title: "Package javax.swing"
+  author: Oracle
+  date: 2023
+  parent:
+    type: web
+    title: Java Platform, Standard Edition 21 API Specification
+  url: https://docs.oracle.com/en/java/javase/21/docs/api/java.desktop/javax/swing/package-summary.html
+
+oracle-swing-tutorial:
+  type: web
+  title: "Trail: Creating a GUI With Swing"
+  author: Oracle
+  date: 2024
+  parent:
+    type: web
+    title: The Java Tutorials
+  url: https://docs.oracle.com/javase/tutorial/uiswing/
+
+oracle-jdbc-tutorial:
+  type: web
+  title: "Trail: JDBC Database Access"
+  author: Oracle
+  date: 2024
+  parent:
+    type: web
+    title: The Java Tutorials
+  url: https://docs.oracle.com/javase/tutorial/jdbc/
+
+oracle-connector-j:
+  type: web
+  title: "MySQL Connector/J Developer Guide"
+  author: Oracle
+  date: 2026
+  parent:
+    type: web
+    title: MySQL Documentation
+  url: https://dev.mysql.com/doc/connector-j/en/
+
+velasco2026databaseconnector:
+  type: repository
+  title: DatabaseConnector
+  author: "Velasco Narváez, Christian Alexander"
+  date: 2026
+  url: https://github.com/iudigital-projects/DatabaseConnector
+
+ovando2026versatileapa:
+  type: repository
+  title: "versatile-apa: Comprehensive APA 7th edition style template for Typst"
+  author: "Ovando, Jassiel"
+  date: 2026
+  version: 7.2.0
+  url: https://typst.app/universe/package/versatile-apa/
+
+typst:
+  type: web
+  title: "Typst documentation"
+  author: Typst GmbH
+  url: https://typst.app/docs/
