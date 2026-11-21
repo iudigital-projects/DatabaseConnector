@@ -18,29 +18,27 @@ public class DatabaseConnector {
   private static String url = "";
   private static String user = "";
   private static String password = "";
-  
-  
+
   public DatabaseConnector(String url, String user, String password) {
     DatabaseConnector.url = url;
     DatabaseConnector.user = user;
     DatabaseConnector.password = password;
   }
 
-  public void connectToDb() {
-    try (Connection connection = DriverManager.getConnection(url, user, password);) {
-      System.out.println("La conexión a la base de datos, fué exitosa");
+  public record ConnectionResult(
+      boolean connected,
+      Statement statement,
+      String message) {
+  }
+
+  public ConnectionResult connectToDb() {
+    try {
+      Connection connection = DriverManager.getConnection(url, user, password);
       Statement statement = connection.createStatement();
-      ResultSet resultSet = statement.executeQuery("SELECT * from cliente");
-
-      while (resultSet.next()) {
-        System.out.println(
-            resultSet.getInt("ID_cliente") + " " + resultSet.getString("nombre_cliente") + " vive en: "
-                + resultSet.getString("pais"));
-      }
-
+      return new ConnectionResult(true, statement, "Conexión a base de datos exitosa");
     } catch (Exception e) {
-      System.out.println("La conexión con MySQL falló: " + e.getMessage());
       e.printStackTrace();
+      return new ConnectionResult(false, null, "ERROR: no se pudo conectar a la base de datos - " + e.getMessage());
     }
   }
 
