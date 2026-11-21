@@ -215,8 +215,19 @@ public class ConnectionTesterUi extends javax.swing.JFrame {
           consoleOutput += resultSet.getInt("ID_cliente") + " " + resultSet.getString("nombre_cliente") + " se ubica en: "
             + resultSet.getString("pais") + "\n";
         }
+
+        java.awt.Color borderColor = new java.awt.Color(49, 217, 129);
+        consoleScrollPanel.setBorder(javax.swing.BorderFactory.createLineBorder(borderColor, 2));
+
+        jTextArea1.setForeground(new java.awt.Color(0, 153, 76));
+      } else {
+        java.awt.Color borderColor = new java.awt.Color(217, 49, 49);
+        jTextArea1.setForeground(new java.awt.Color(217, 49, 49));
+        consoleScrollPanel.setBorder(javax.swing.BorderFactory.createLineBorder(borderColor, 2));
       }
     } catch (Exception e) {
+      java.awt.Color borderColor = new java.awt.Color(217, 49, 49);
+      consoleScrollPanel.setBorder(javax.swing.BorderFactory.createLineBorder(borderColor, 2));
       consoleOutput += conResult.message() + "\n" + e.getMessage();
     }
 
