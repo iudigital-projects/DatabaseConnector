@@ -1,0 +1,85 @@
+# ---------------------------------------------------------------------------
+# Maven
+# ---------------------------------------------------------------------------
+# Everything produced by the build.
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# ---------------------------------------------------------------------------
+# Java / JVM artifacts
+# ---------------------------------------------------------------------------
+*.class
+*.jar
+# The Maven wrapper jar is source, not a build artifact (must come after *.jar).
+!.mvn/wrapper/maven-wrapper.jar
+*.war
+*.ear
+*.nar
+# JVM crash / profiling logs.
+hs_err_pid*
+replay_pid*
+*.hprof
+
+# ---------------------------------------------------------------------------
+# Eclipse (m2e regenerates these from pom.xml). Remove/comment these lines if
+# your team prefers to commit shared IDE settings.
+# ---------------------------------------------------------------------------
+.classpath
+.project
+.settings/
+bin/
+.metadata/
+.factorypath
+.apt_generated/
+.springBeans
+.sts4-cache/
+.recommenders/
+__CREATED_BY_JAVA_LANGUAGE_SERVER__/
+
+# ---------------------------------------------------------------------------
+# NetBeans
+# NOTE: *.form files are GUI-designer SOURCE and must be committed.
+# ---------------------------------------------------------------------------
+nbproject/private/
+nbbuild/
+nbdist/
+dist/
+.nb-gradle/
+
+# ---------------------------------------------------------------------------
+# IntelliJ IDEA
+# ---------------------------------------------------------------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ---------------------------------------------------------------------------
+# VS Code
+# ---------------------------------------------------------------------------
+.vscode/
+
+# ---------------------------------------------------------------------------
+# OS / editor noise
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# ---------------------------------------------------------------------------
+# Logs, local config & secrets (DB URLs, users, passwords)
+# ---------------------------------------------------------------------------
+*.log
+.env
+.env.*
+!.env.example
+*.local
